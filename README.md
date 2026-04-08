@@ -1,113 +1,127 @@
-# Gaming User Loyalty Analysis
+# Vindiata Loyalty Analysis Case Study
 
 ## Overview
 
-This project is based on analyzing user activity data from a gaming platform to understand user behavior and calculate loyalty points. The analysis focuses on how users interact with the platform through deposits, withdrawals, and gameplay activity.
+This project presents an analysis of user activity data from a gaming platform with the objective of understanding user behavior and designing a fair loyalty points system. The analysis is based on deposits, withdrawals, and gameplay activity to identify high-value and highly engaged users.
 
-The objective is to identify high-value users and generate insights that can support better decision-making in reward distribution and user engagement.
+The goal of this case study is to simulate a real-world business scenario where user data is used to drive better decision-making for rewards and engagement strategies.
 
 ---
 
 ## Objectives
 
-The main objectives of this project are:
-
-* To analyze user transactions and activity
-* To calculate loyalty points using a defined approach
-* To identify top-performing users
-* To derive insights that can be useful for business decisions
+* Analyze user activity across financial transactions and gameplay
+* Calculate loyalty points using a structured approach
+* Identify top users based on overall contribution
+* Generate insights to support business decisions
+* Propose a fair bonus distribution strategy
 
 ---
 
-## Dataset
+## Dataset Description
 
 The dataset consists of three types of user activity:
 
-* Deposit transactions
-* Withdrawal transactions
-* Gameplay records
+* Deposit transactions (amount added by users)
+* Withdrawal transactions (amount withdrawn by users)
+* Gameplay records (number of games played)
 
-The same user can have multiple records across these datasets.
+Each user may have multiple records across these datasets.
 
-Note: The original dataset is not included in this repository due to privacy reasons.
+Note: The original dataset is not included in this repository due to data privacy considerations.
 
 ---
 
 ## Data Preparation
 
-Before analysis, the data was cleaned and prepared:
+The dataset was cleaned and prepared before analysis:
 
-* Column names were standardized
+* Column names were standardized for consistency
 * Datetime fields were converted into proper format
 * Duplicate records were removed
-* Missing values were handled carefully
+* Missing values were handled appropriately
 
 ---
 
 ## Feature Engineering
 
-Some additional features were created to improve the analysis:
+To enhance the analysis, additional features were created:
 
-* Time slots were defined (12 AM–12 PM and 12 PM–12 AM)
-* Date was extracted from datetime for daily analysis
+* Time slots were defined:
+
+  * Slot 1: 12 AM – 12 PM
+  * Slot 2: 12 PM – 12 AM
+* Date was extracted from datetime for daily-level analysis
 
 ---
 
 ## Loyalty Points Calculation
 
-Loyalty points were calculated based on user activity, including deposits, withdrawals, and number of games played. Both financial contribution and engagement were considered to ensure a balanced evaluation.
+Loyalty points were calculated by considering both financial activity and user engagement. The approach includes:
+
+* Contribution from deposit amount
+* Contribution from withdrawal amount
+* Difference between deposit and withdrawal counts
+* Number of games played
+
+This ensures that both spending behavior and platform engagement are reflected in the final score.
 
 ---
 
 ## Analysis Performed
 
-The following analysis was carried out:
+The following analysis was conducted:
 
 * Slot-wise loyalty point calculation
 * Ranking users based on total loyalty points
-* Calculating average deposit amount
-* Calculating average deposit per user
-* Calculating average number of games played per user
+* Average deposit amount
+* Average deposit per user
+* Average number of games played per user
 
 ---
 
-## Bonus Distribution Approach
+## Bonus Distribution Strategy
 
-A balanced strategy was considered for bonus allocation among top users. The approach gives importance to both loyalty points and gameplay activity, ensuring fairness between high spenders and active users.
+A balanced bonus allocation approach was proposed for top users:
 
----
+* 70% weight based on loyalty points
+* 30% weight based on gameplay activity
 
-## Observations
-
-* Users with higher gameplay activity tend to earn more points
-* Financial contribution also plays a significant role
-* A balance between engagement and spending is important for fair rewards
+This method ensures fairness by rewarding both high-value users and highly active users.
 
 ---
 
-## Improvements Suggested
+## Key Observations
 
-* Limit excessive weight on deposits
-* Increase importance of user activity
+* Users with higher gameplay activity tend to earn more loyalty points
+* Financial contribution significantly impacts rankings
+* A balanced approach is necessary to fairly reward different types of users
+
+---
+
+## Suggested Improvements
+
+* Introduce a cap on the influence of large deposits
+* Increase weight for gameplay activity
 * Normalize scores across users
 * Include basic fraud detection checks
 
 ---
 
-## Tools Used
+## Tools and Technologies
 
-* Excel / SQL / Python
-* Data cleaning and transformation techniques
-* Basic data analysis methods
+* Python / Excel / SQL
+* Data cleaning and preprocessing
+* Basic analytical techniques
 
 ---
 
 ## Conclusion
 
-This project shows how user activity data can be used to design a simple loyalty system. The analysis highlights the importance of considering both engagement and financial behavior while evaluating users.
+This case study demonstrates how user activity data can be used to design a practical loyalty system. The analysis highlights the importance of balancing financial contribution with user engagement to create a fair and effective reward strategy.
 
 ---
 
 ## Author
 
-Manish Kumar Rajak
+Manish Kumar
