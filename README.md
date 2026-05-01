@@ -28,8 +28,6 @@ The dataset consists of three types of user activity:
 
 Each user may have multiple records across these datasets.
 
-Note: The original dataset is not included in this repository due to data privacy considerations.
-
 ---
 
 ## Data Preparation
